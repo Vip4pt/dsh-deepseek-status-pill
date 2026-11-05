@@ -2,6 +2,17 @@
 
 这份文档说明「让任何人一键装上这个插件」需要的准备。结论先说：**插件本体已经具备可安装形态（`dsh.bundle` + `cordis.patch.yml`，零运行时依赖），剩下的关键动作只有三件——公开仓库、npm 发包、收录进社区目录。**
 
+## 当前状态 / Status（2026-11-05）
+
+- 公开仓库：**https://github.com/Vip4pt/dsh-deepseek-status-pill**（`main`，公开）✅
+- 仓库话题：`dsh-plugin` ✅
+- `package.json` 与 `LICENSE` 的 `<github-owner>` 占位符：已替换为 `Vip4pt` ✅
+- npm 发布：**待做**（`npm publish --access public --registry https://registry.npmjs.org/`）
+- 目录收录 PR：**待做**——仓库创建于 2026-11-05T14:06Z，awesome-dsh-plugin 的 CI 要求仓库满 24 小时，之后用 `distribution/catalog-entry.yml` 提交 `Vip4pt__dsh-deepseek-status-pill.yml`
+- 本机网络注意：直连 `github.com:443` 当前不通，git 全局 `http.proxy=http://127.0.0.1:7897` 配合
+  schannel 会握手失败。当前可用的推送命令是
+  `git -c http.sslBackend=openssl push`（走已配置的代理）；代理/直连恢复后去掉覆盖即可。
+
 一键安装的真实链路（已在本机 dsh 0.2.1-rc.5 + dshmarket 1.71.1 上核对过）：
 
 ```
