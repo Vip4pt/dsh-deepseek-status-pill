@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek service status",
+    "description": "Adds a rounded status pill to the right of the Desktop 应用 / 编辑 menus: a green light while the service is healthy, a yellow light for an incident or an unreadable feed, and a detail panel on hover or focus."
+  }
+}

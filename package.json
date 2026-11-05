@@ -1,0 +1,70 @@
+{
+  "name": "dsh-deepseek-status-pill",
+  "version": "1.0.0",
+  "description": "DeepSeek service status pill for the DeepSeek Harness Desktop caption: a rounded indicator light plus status text next to the 应用 / 编辑 menus, with an Atom-subscribed detail panel on hover or focus.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./client.js": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "assets",
+    "README.md",
+    "PUBLISHING.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT",
+  "author": "Vip4pt",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "status",
+    "atom",
+    "desktop",
+    "windows"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vip4pt/dsh-deepseek-status-pill"
+  },
+  "homepage": "https://github.com/Vip4pt/dsh-deepseek-status-pill#readme",
+  "bugs": {
+    "url": "https://github.com/Vip4pt/dsh-deepseek-status-pill/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepack": "node scripts/check-publish.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}

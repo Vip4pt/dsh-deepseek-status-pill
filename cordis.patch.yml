@@ -1,0 +1,5 @@
+# dsh-deepseek-status-pill bundle patch: inserts the plugin row into the profile layer stack.
+- insert:
+    - id: deepseek-status-pill
+      name: 'dsh-deepseek-status-pill'
+      config: {}

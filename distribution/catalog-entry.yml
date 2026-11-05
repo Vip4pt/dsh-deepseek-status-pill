@@ -1,0 +1,25 @@
+# Catalog entry template / 目录条目模板
+#
+# Submit this one file to https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# Path: data/plugins/Vip4pt__dsh-deepseek-status-pill.yml
+# 向 awesome-dsh-plugin 提交这一个文件，路径如上。
+#
+# Replace Vip4pt first. `description.en` is required and is checked
+# against the code; `zh` is optional.
+# 先替换 Vip4pt；description.en 必填且必须与代码一致，zh 可选。
+
+url: https://github.com/Vip4pt/dsh-deepseek-status-pill
+name: Vip4pt/dsh-deepseek-status-pill
+category: notify
+description:
+  en: A status pill in the DeepSeek Harness Desktop caption that follows the DeepSeek status Atom feed, with a hover panel for the latest incident and read errors.
+  zh: 在 DeepSeek Harness Desktop 顶栏显示 DeepSeek 服务状态指示灯，订阅状态 Atom 源，悬停可查看最新故障与读取错误。
+# Optional: GitHub-hosted raster tile for the storefront card.
+# 可选：商店卡片图标，必须是 GitHub 托管的位图。
+icon: https://raw.githubusercontent.com/Vip4pt/dsh-deepseek-status-pill/main/assets/icon-180.png
+
+# Optional, only when the plugin is NOT published to npm: point at a prebuilt
+# tarball on a GitHub Release. Keep the asset name version-free with
+# latest/download/, or pin the release tag.
+# 可选：不发 npm 时指向 GitHub Release 上的预构建 tarball。
+# tarball: https://github.com/Vip4pt/dsh-deepseek-status-pill/releases/latest/download/dsh-deepseek-status-pill.tgz

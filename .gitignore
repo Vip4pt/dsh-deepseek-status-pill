@@ -1,0 +1,10 @@
+node_modules/
+*.tgz
+.tmp/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local screenshots captured with a desktop screenshot tool; publishable shots
+# belong in assets/ and are declared in screenshots.json.
+ScreenShot_*.png

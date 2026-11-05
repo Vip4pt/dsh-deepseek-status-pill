@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DeepSeek status pill index",
+    "zh": "DeepSeek 服务状态索引"
+  },
+  "description": {
+    "en": "A one-entry plugin market index for self-hosting before the community catalog lists the plugin.",
+    "zh": "在进入社区目录之前自建托管用的单条插件市场索引。"
+  },
+  "metadata": {
+    "categories": {
+      "notify": {
+        "title": {
+          "en": "Notifications & status",
+          "zh": "通知与状态"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-deepseek-status-pill",
+      "title": {
+        "en": "DeepSeek service status",
+        "zh": "DeepSeek 服务状态"
+      },
+      "description": {
+        "en": "A status pill in the DeepSeek Harness Desktop caption that follows the DeepSeek status Atom feed, with a hover panel for the latest incident and read errors.",
+        "zh": "在 DeepSeek Harness Desktop 顶栏显示 DeepSeek 服务状态指示灯，订阅状态 Atom 源，悬停可查看最新故障与读取错误。"
+      },
+      "author": "Vip4pt",
+      "icon": "https://raw.githubusercontent.com/Vip4pt/dsh-deepseek-status-pill/main/assets/icon-180.png",
+      "homepage": "https://github.com/Vip4pt/dsh-deepseek-status-pill",
+      "repository": {
+        "url": "https://github.com/Vip4pt/dsh-deepseek-status-pill"
+      },
+      "metadata": {
+        "category": "notify",
+        "keywords": [
+          "deepseek",
+          "status",
+          "atom",
+          "desktop"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794000000,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}
